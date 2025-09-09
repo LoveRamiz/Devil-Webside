@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #180e0b; color: #d77261;"></body>
+<style>
+    /* Mobile-friendly line numbers */
+@media (max-width: 768px) {
+    #left {
+        width: 40px;  /* छोटा sidebar */
+        display: block;
+    }
+
+    #linenumbers {
+        font-size: 10px; /* छोटे numbers */
+        color: #646f72;
+        text-align: right;
+        line-height: 1.2em;
+        padding-right: 3px;
+    }
+
+    #content {
+        margin-left: 50px; /* content shift थोड़ा */
+    }
+}
+</style>
+
+    <div id="left">
+        <div id="linenumbers"></div>
+    </div>
+
+    <div id="header">
+        <a href="welcome.html">
+            <div id="menuitem">HOME</div>
+        </a>
+        <a href="music.html">
+            <div id="menuitem">MUSIC</div>
+        </a>
+        <a href="programming.html">
+            <div id="menuitem">PROGRAMMING</div>
+        </a>
+        <a href="socialmedia.html">
+            <div id="menuitem">SOCIAL MEDIA</div>
+        </a>
+
+        <a href="Notes.html">
+            <div id="menuitem">NOTES</div>
+        </a>
+
+        <a href="secret.html">
+            <div id="menuitem">SECRET</div>
+        </a>
+    </div>
+    <img id="kangaroo" src="images/Kangaroo.png" alt="Kangaroo">
+
+    <div id="content">
+        <!-- This is a  bom shorts-->
+        <h1>Programming</h1>
+        <br><br>
+
+        <br>
+        <div>
+            <!-- Single Photo -->
+            <img src="images/bombTimer1.png" class="bombTimer1">
+
+            <p>
+                A programmer sat at his desk, studying different timer apps to understand how they worked.
+                He planned the features: countdown, interactive buttons, and alerts.
+                Step by step, he coded the first BoomTimer using HTML, CSS, and JavaScript.
+                He tested it at home, making sure the countdown was accurate and the timer worked smoothly.
+                After fixing small bugs and adjusting the design, the first BoomTimer was ready to use.
+            </p>
+            <br>
+        </div>
+        <div>
+            <img src="images/bomb_christmas 2.png" class="bomb_christmas">
+            <p>
+                After completing the first version, the programmer added a display screen for better visuals.
+                A Christmas hat was placed on top to give a fun UI touch.
+                The countdown and buttons were updated to match the new design.
+                Currently, the app is launch-ready, but debugging and final testing are ongoing.
+                Improvements are being made to ensure smooth countdown and perfect interaction.
+            </p>
+            <br>
+        </div>
+
+        <div>
+
+            <img src="images/bomtimer 3.png" class="BomTimer3">
+            <p>
+                The programmer finalized the complete BoomTimer UI, bringing all features together.
+                The countdown works smoothly, with accurate timing and clear display.
+                Sound effects and visuals were added to make the experience interactive.
+                The design now feels polished, stable, and fully ready for use.
+                This version marks the completion of the BoomTimer project, ready to be shared.
+                <a href="https://github.com/LoveRamiz/Terrorist-Bomb-Timer" class="BomTimer">BoomTimer</a>
+            </p>
+            <br>
+
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+        let nums = "";
+        for (let i = 1; i <= 200; i++) {
+            nums += i + "<br>";
+        }
+        document.getElementById("linenumbers").innerHTML = nums;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+/* ==================== GLOBAL STYLES ==================== */
+/* -------- HEADER MENU FIX -------- */
+#header {
+    background-color: #252728;
+    position: fixed;
+    top: 0;
+    left: 60px;               /* match #left width */
+    right: 0;
+    z-index: 999;
+    display: flex;
+    flex-wrap: nowrap;         /* prevent items wrapping */
+    align-items: center;
+    gap: 6px;                  /* smaller gap so items fit */
+    padding: 6px 10px;         /* compact padding */
+    white-space: nowrap;        /* prevent line break */
+    overflow-x: auto;           /* horizontal scroll if screen too small */
+    -webkit-overflow-scrolling: touch;
+}
+
+#header a {
+    display: inline-block;
+    flex: 0 0 auto;            /* item width fixed */
+    padding: 4px 8px;          /* smaller padding */
+    font-size: 13px;           /* smaller font to fit */
+    color: #646f72;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#header a:hover {
+    background-color: #2a2e2f;
+    color: #d77261;
+}
+
+/* MAIN CONTENT */
+#content {
+    margin-left: 90px;
+    margin-top: 60px; /* header height */
+    padding: 20px;
+    max-width: 900px;
+}
+
+/* Left gutter */
+#left {
+    width: 60px;
+    background: #2e3436;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("images/bar.png");
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #left { display: none; }          /* hide left gutter on mobile */
+    #header { left: 0; padding-left: 6px; } /* full width */
+    #header a { padding: 6px 6px; font-size: 12px; }
+    #content { margin-left: 12px; margin-right: 12px; margin-top: 64px; }
+}
+
+/* very small screens */
+@media (max-width: 420px){
+    #header a { font-size: 11px; padding: 4px 4px; }
+}
+
+#linenumbers {
+    padding-right: 5px;
+    font-size: 12px;
+    color: #646f72;
+    text-align: right;
+    line-height: 1.4em;
+}
+
+/* Header menu */
+#header {
+    background-color: #252728;
+    position: fixed;
+    top: 0;
+    left: 60px;
+    right: 0;
+    font-family: monospace;
+    padding-left: 30px;
+    z-index: 100;
+    
+}
+
+
+#header a {
+    text-decoration: none;
+    color: #646f72;
+}
+
+#menuitem {
+    display: inline-block;
+    padding: 5px 12px;
+
+}
+
+#menuitem:hover {
+    background-color: #2a2e2f;
+}
+
+/* Main content */
+#content {
+    margin-left: 90px;
+    margin-top: 70px;
+    padding: 20px;
+    max-width: 900px;
+}
+
+#content h1 {
+    font-family: 'Georgia', serif !important;
+    color: #ffffff !important;
+    font-size: 36px !important;
+    text-align: left !important;
+    margin-bottom: 60px !important;
+}
+
+#content p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #d77261;
+    text-align: justify;
+    position: relative;
+}
+
+/* Images */
+img {
+    border: none;
+    outline: none;
+    max-width: 100%;
+    height: auto;
+}
+
+#devil {
+    display: block;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+#kangaroo {
+    position: fixed;
+    bottom: 10px;
+    left: 40px;
+    z-index: 10;
+    height: 80px;
+}
+
+/* Optional classes */
+.DogDavil {
+    margin-left: 570px;
+}
+
+/* ----------------------------------- MEDIA QUERIES FOR RESPONSIVE ---------------------------- */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+    #left {
+        width: 40px;
+    }
+    #header {
+        left: 40px;
+        padding-left: 20px;
+    }
+    #content {
+        margin-left: 70px;
+        padding: 15px;
+    }
+}
+
+/* Tablets and larger phones */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+    #left {
+        width: 30px;
+    }
+    #header {
+        left: 30px;
+        padding-left: 15px;
+        font-size: 14px;
+    }
+    #menuitem {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+    #content {
+        margin-left: 50px;
+        margin-top: 60px;
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    #left {
+        display: none;
+    }
+    #header {
+        left: 0;
+        padding-left: 5px;
+        font-size: 12px;
+    }
+    #menuitem {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+    #content {
+        margin-left: 0;
+        margin-top: 50px;
+        padding: 8px;
+    }
+}
+
+/* ------------------------------------------------------ ADDITIONAL ELEMENTS STYLING ------------------------------------------------------ */
+
+/* Social links, notes, programming, secret sections, swag, contentlove */
+#swag, #nub, #contentlove {
+    max-width: 900px;
+    width: 90%;
+    margin: 30px auto;
+    display: block;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    overflow: visible;
+}
+
+#swag .swag-photo,
+#nub .derknight-mode,
+#contentlove .ramizwohand {
+    width: 100%;
+    max-height: 720px;
+    height: auto;
+    display: block;
+    margin: 0 auto 14px auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    background-color: #111;
+}
+
+#swag .swag-caption h2,
+#nub .swag-caption h2,
+#contentlove h2 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    color: #f1f1f1;
+}
+
+#swag .swag-text,
+#nub .swag-text,
+#contentlove p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #d77261;
+    text-align: left;
+}
+
+#content a,
+#content a.BomTimer,
+#contentlove a {
+    font-size: 14px;
+    margin-right: 0;
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 600px) {
+    #swag, #nub, #contentlove {
+        padding: 12px;
+        margin: 20px auto;
+    }
+    #swag .swag-caption h2,
+    #nub .swag-caption h2,
+    #contentlove h2 {
+        font-size: 18px;
+    }
+    #swag .swag-text,
+    #nub .swag-text,
+    #contentlove p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    #swag .swag-photo,
+    #nub .derknight-mode,
+    #contentlove .ramizwohand {
+        max-height: 480px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 360px) {
+    #swag, #nub, #contentlove {
+        padding: 8px;
+        margin: 15px auto;
+    }
+    #swag .swag-caption h2,
+    #nub .swag-caption h2,
+    #contentlove h2 {
+        font-size: 16px;
+    }
+    #swag .swag-text,
+    #nub .swag-text,
+    #contentlove p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    #swag .swag-photo,
+    #nub .derknight-mode,
+    #contentlove .ramizwohand {
+        max-height: 360px;
+    }
+}
+
+
