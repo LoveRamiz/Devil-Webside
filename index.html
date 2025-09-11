@@ -7,41 +7,52 @@
     <title>Kangaroo Intro</title>
     <!-- Favicon -->
     <link rel="icon" href="/icons/favicon.ico" type="image/x-icon">
-
     <!-- App Icons -->
-    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192.png">
-    <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-foreground-192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="icons/icon-foreground-512.png">
 
     <!-- Manifest -->
     <link rel="manifest" href="/manifest.json">
-</head>
 
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background: #000;
-        /* black background for stylish look */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        /* full screen */
-    }
+    <!-- Social media preview (Open Graph) -->
+    <meta property="og:title" content="Yagami">
+    <meta property="og:description" content="Welcome to Devil Website">
+    <meta property="og:image" content="icons/icon-foreground-512.png">
+    <meta property="og:url" content="https://a-yagami.netlify.app">
+    <meta property="og:type" content="website">
 
-    .kangaroo {
-        max-width: 60%;
-        height: auto;
-        cursor: pointer;
-        /* hover पर pointer दिखे */
-        transition: transform 0.3s ease;
-    }
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yagami">
+    <meta name="twitter:description" content="Welcome to Devil Website">
+    <meta name="twitter:image" content="icons/icon-foreground-512.png">
 
-    .kangaroo:hover {
-        transform: scale(1.1);
-        /* hover पर zoom effect */
-    }
-</style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            /* black background for stylish look */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* full screen */
+        }
+
+        .kangaroo {
+            max-width: 60%;
+            height: auto;
+            cursor: pointer;
+            /* hover पर pointer दिखे */
+            transition: transform 0.3s ease;
+        }
+
+        .kangaroo:hover {
+            transform: scale(1.1);
+            /* hover पर zoom effect */
+        }
+    </style>
 </head>
 
 <body>
